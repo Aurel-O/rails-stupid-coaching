@@ -1,0 +1,21 @@
+<div class="text-bg-info p-3">
+<p><%= @question %></p>
+<p><I>- You</I></p>
+</div>
+
+<div class="text-bg-light p-3">
+<p><%= @answer %></p>
+<p><I>- Your Coach</I></p>
+</div>
+
+<button type="submit" <%= link_to "Ask an other question", ask_path %></button>
+
+
+
+
+
+
+
+<%# Si le message est I am going to work, le coach répondra Great!.
+Si le message contient un point d’interrogation ? à la fin, le coach répondra Silly question, get dressed and go to work!.
+Sinon, le coach répondra I don't care, get dressed and go to work!. %>
